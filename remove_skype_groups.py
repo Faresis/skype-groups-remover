@@ -16,11 +16,11 @@ while chts:
 for k,v in elements.items():
   try:
     print("Saying by to: ", k)
-    sk.chat(k).sendMsg("PS. https://github.com/Faresis/skype-groups-remover/blob/main/remove_skype_groups.py")
+    sk.chats.chat(k).sendMsg("PS. https://github.com/Faresis/skype-groups-remover/blob/main/remove_skype_groups.py")
     print("Leaving: ", k) 
-    sk.chat(k).leave()
+    sk.chats.chat(k).leave()
     print("Left successfully!")
-    sk.chat(k).delete()
+    sk.chats.chat(k).delete()
     print("Deleted successfully!")
   except SkypeApiException as sae:
     print("Failed! :(")
