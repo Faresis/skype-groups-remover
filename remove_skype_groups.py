@@ -16,7 +16,7 @@ while chts:
 for k,v in elements.items():
   try:
     print("Saying by to: ", k)
-    sk.chat(k).sendMsg("PS. https://github.com/")
+    sk.chat(k).sendMsg("PS. https://github.com/Faresis/skype-groups-remover/blob/main/remove_skype_groups.py")
     print("Leaving: ", k) 
     sk.chat(k).leave()
     print("Left successfully!")
